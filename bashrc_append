@@ -1,9 +1,5 @@
 # Default ROS
-source /opt/ros/hydro/setup.bash
-#source /opt/ros/indigo/setup.bash
-
-# ROS Variables
-source ~/ancilla_ws/devel/setup.bash
+source /opt/ros/noetic/setup.bash
 
 # ROS Networking
 #TODO: Autoswitch
@@ -11,4 +7,3 @@ export ROS_IP=`ifconfig eth0 | grep 'inet addr' | cut -d ':' -f 2 | cut -d ' ' -
 export ROS_IP=`ifconfig eth1 | grep 'inet addr' | cut -d ':' -f 2 | cut -d ' ' -f 1`
 export ROS_IP=`ifconfig eth2 | grep 'inet addr' | cut -d ':' -f 2 | cut -d ' ' -f 1`
 export ROS_MASTER_URI=http://localhost:11311/
-
